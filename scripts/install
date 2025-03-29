@@ -8,7 +8,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Setting up source files..."
 
-ynh_setup_source --dest_dir="$install_dir/"
+ynh_setup_source --dest_dir="$install_dir"
 
 #=================================================
 # BUILD APP
@@ -22,11 +22,6 @@ pushd $install_dir/
 popd
 
 ynh_go_remove
-#ynh_safe_rm "$install_dir/.cache/"
-#ynh_safe_rm "$install_dir/go/"
-#ynh_safe_rm "$install_dir/.go-version"
-
-#chmod +x "$install_dir/gull"
 
 #=================================================
 # SYSTEM CONFIGURATION
