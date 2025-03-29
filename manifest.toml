@@ -46,7 +46,8 @@ ram.runtime = "50M"
     [resources.sources.main]
     url = "https://github.com/aeolyus/gull/archive/7ffce480463d31fe0555f2c9d87737bfe1d11dcf.tar.gz"
     sha256 = "1f8c23df6bfd401152bef0b2a27eee5d1982633c74bb75b2be1187689652114c"
-    autoupdate.strategy = "latest_github_tag"
+    autoupdate.upstream = "https://github.com/aeolyus/gull"
+    autoupdate.strategy = "latest_github_commit"
  
     [resources.system_user]
 
